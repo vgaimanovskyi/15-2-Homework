@@ -1,0 +1,23 @@
+& {
+    border-width: 2px;
+    border-style: solid;
+    border-top-color: transparent;
+    padding: 70px 10px 25px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+&::after,
+&::before {
+    content: '';
+    height: 2px;
+    width: 25%;
+    position: absolute;
+    top: -2px;
+}
+&::before {
+    left: -2px;
+}
+&::after {
+    right: -2px;
+}
