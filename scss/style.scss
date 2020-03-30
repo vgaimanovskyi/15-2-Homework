@@ -475,7 +475,8 @@ html {
         margin-bottom: 9px;
         background-position: center;
         background-size: cover;
-
+        cursor: pointer;
+        
         @media screen and (max-width: 575px) {
             height: 200px;
         }
