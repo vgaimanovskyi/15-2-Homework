@@ -6,13 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d223746498.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <title>DESIGN LAB</title>
 </head>
 
 <body>
+    <!-- menu -->
+    <div class="menu">
+        <a href="#" class="menu__btn js-menu__btn">
+            <i class="fas fa-arrow-circle-left"></i>
+        </a>
+        <ul class="nav js-nav">
+            <li class="nav__block">
+                <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__block">
+                <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__block">
+                <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__block">
+                <a href="#whatwedo" class="nav__link">We do</a>
+            </li>
+            <li class="nav__block">
+                <a href="#gallery" class="nav__link">Gallery</a>
+            </li>
+            <li class="nav__block">
+                <a href="#contact" class="nav__link">Contact</a>
+            </li>
+        </ul>
+    </div>
     <!-- header -->
-    <div class="page page--header">
+    <div class="page page--header" id="home">
         <div class="page__mainer">
 
             <header class="header">
@@ -38,7 +65,7 @@
         </div>
     </div>
     <!-- about -->
-    <div class="page page--about">
+    <div class="page page--about" id="about">
         <div class="page__mainer">
 
             <div class="about">
@@ -61,7 +88,7 @@
         </div>
     </div>
     <!-- services -->
-    <div class="page page--services">
+    <div class="page page--services" id="services">
         <div class="page__mainer">
 
             <div class="services">
@@ -83,7 +110,7 @@
         </div>
     </div>
     <!-- whatwedo -->
-    <div class="page page--whatwedo">
+    <div class="page page--whatwedo" id="whatwedo">
         <div class="page__mainer">
 
             <div class="whatwedo">
@@ -133,7 +160,7 @@
         </div>
     </div>
     <!-- gallery -->
-    <div class="page page--gallery">
+    <div class="page page--gallery" id="gallery">
 
         <div class="gallery">
             <div class="row row--gallery">
@@ -172,7 +199,7 @@
 
     </div>
     <!-- contact -->
-    <div class="page page--contact">
+    <div class="page page--contact" id="contact">
         <div class="page__mainer">
 
             <div class="contact">
@@ -201,6 +228,14 @@
 
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('.js-menu__btn').click(function () {
+            $(this).toggleClass('menu__btn--open');
+            $('.js-nav').toggle(500);
+        })
+    </script>
 </body>
 
 </html>

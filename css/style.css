@@ -73,6 +73,54 @@ contact {
     lh__description: 26px;
 }
 
+/* menu */
+.menu {
+  position: fixed;
+  top: 5%;
+  right: 0;
+  background-color: rgba(208, 227, 252, 0.63);
+  z-index: 10;
+}
+
+.menu__btn {
+  display: inline-block;
+  font-size: 42px;
+  color: #436a99;
+  padding: 5px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.menu__btn--open {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.nav {
+  display: none;
+  width: 200px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav__block {
+  padding: 0 10px;
+  margin: 5px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav__block:hover {
+  margin-left: -20px;
+}
+
+.nav__link {
+  font-size: 40px;
+  font-weight: 700;
+  color: #436a99;
+}
+
 /* page */
 html {
   height: 100%;
